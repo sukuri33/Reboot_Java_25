@@ -12,7 +12,7 @@ Things to keep in mind!
 • Return Type of the overloaded method can be same or
 different
 • Method can be overloaded any number of times
-• Any method can be overloaded - including constructor - more to come on this.
+• Any method can be overloaded - including constructor and the main method - more to come on this.
 * */
 public class OverloadedMethod {
     public static void main(String[] args) {
@@ -22,6 +22,10 @@ public class OverloadedMethod {
      //As you can see below that substring() is a overloaded method.
      myString.substring(5);
      myString.substring(1, 3);
+
+    }
+    //overloaded MAIN method
+    public static void main(int[] args) {
 
     }
 }

@@ -30,6 +30,20 @@ public class BreakAndContinue {
             }
             System.out.println(i);
         }
+        //This method is to demonstrate the usage of a return key word in a loop with the conjunction of a method.
+        exampleForReturnKeyWordUsedInAloop("String");
 
     }
+
+    private static String exampleForReturnKeyWordUsedInAloop(String string) {
+
+        for (int i = 0; i < string.length(); i++) {
+            if(string.charAt(i) == 's'){
+                return string.substring(i);
+            }
+        }
+        return "null";
+    }
+
+
 }
