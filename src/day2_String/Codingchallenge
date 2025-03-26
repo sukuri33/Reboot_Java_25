@@ -1,0 +1,92 @@
+Create a class name DigitLetterSpecialChar and write a program that asks the use to enter a word.
+1.If the word starts with a digits, then print "1st character is a digit"
+2.if the word starts with a uppercase letter then print "1st character is a uppercase letter"
+3.opposite of No.2 for lowercase
+4.if the word starts with a special character, then print "1st character is a special character"
+
+import java.util.Scanner;
+
+public class DigitLetterSpecialChar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a word
+        System.out.print("Enter a word: ");
+        String word = scanner.nextLine();
+
+        // Ensure the input is not empty
+        if (word.isEmpty()) {
+            System.out.println("You must enter a word.");
+            return;
+        }
+
+        // Get the first character of the word
+        char firstChar = word.charAt(0);
+
+        // Check the type of the first character and print the result
+        if (Character.isDigit(firstChar)) {
+            System.out.println("1st character is a digit.");
+        } else if (Character.isUpperCase(firstChar)) {
+            System.out.println("1st character is an uppercase letter.");
+        } else if (Character.isLowerCase(firstChar)) {
+            System.out.println("1st character is a lowercase letter.");
+        } else {
+            System.out.println("1st character is a special character.");
+        }
+
+        scanner.close();
+    }
+}
+
+How It Works:
+Prompt for Input: The program asks the user to enter a word.
+Validation: If the input is empty, it informs the user to enter a word and exits.
+Character Check:
+Uses Character.isDigit() to check if the first character is a digit.
+Uses Character.isUpperCase() to check if it's an uppercase letter.
+Uses Character.isLowerCase() to check if it's a lowercase letter.
+If none of the above conditions are met, it's considered a special character.
+Output: The program prints the appropriate message based on the first character.
+
+Here's a solution that avoids using the Character class methods like isDigit, isUpperCase, or isLowerCase. Instead, we directly compare the ASCII values of the characters:
+import java.util.Scanner;
+
+public class DigitLetterSpecialChar {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a word
+        System.out.print("Enter a word: ");
+        String word = scanner.nextLine();
+
+        // Ensure the input is not empty
+        if (word.isEmpty()) {
+            System.out.println("You must enter a word.");
+            return;
+        }
+
+        // Get the first character of the word
+        char firstChar = word.charAt(0);
+
+        // Check the type of the first character based on ASCII values
+        if (firstChar >= '0' && firstChar <= '9') {
+            System.out.println("1st character is a digit.");
+        } else if (firstChar >= 'A' && firstChar <= 'Z') {
+            System.out.println("1st character is an uppercase letter.");
+        } else if (firstChar >= 'a' && firstChar <= 'z') {
+            System.out.println("1st character is a lowercase letter.");
+        } else {
+            System.out.println("1st character is a special character.");
+        }
+
+        scanner.close();
+    }
+}
+Explanation:
+ASCII Ranges:
+Digits: '0' to '9' (ASCII range 48–57).
+Uppercase letters: 'A' to 'Z' (ASCII range 65–90).
+Lowercase letters: 'a' to 'z' (ASCII range 97–122).
+Special characters: Any character outside these ranges.
+Comparison:
+We use conditional checks (>= and <=) to determine the type of the first character based on its ASCII value.
