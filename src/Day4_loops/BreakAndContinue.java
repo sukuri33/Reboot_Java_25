@@ -1,5 +1,9 @@
 package Day4_loops;
-
+/*
+* Branching Statement
+*   break;
+*   continue;
+* */
 public class BreakAndContinue {
     public static void main(String[] args) {
         System.out.println("********break; example**************");
@@ -33,6 +37,22 @@ public class BreakAndContinue {
         //This method is to demonstrate the usage of a return key word in a loop with the conjunction of a method.
         exampleForReturnKeyWordUsedInAloop("String");
 
+        System.out.println(removeDupFromString("aaabbbcccddd"));
+
+    }
+
+    private static String removeDupFromString(String str) {
+        String result = "";
+        for(int i = 0; i < str.length();i++){
+
+            if(result.contains(""+str.charAt(i))){
+                continue;
+            }
+                result += str.charAt(i);
+
+        }
+
+        return result;
     }
 
     private static String exampleForReturnKeyWordUsedInAloop(String string) {
