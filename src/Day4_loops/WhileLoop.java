@@ -6,13 +6,23 @@ public class WhileLoop {
         while(true){
             counter++;
             System.out.println(counter);
-            if(counter == 5){
+            if(counter == 1){
                 break;
             }
 
         }
 
+        String words = "I love Java javA java jaja jaVA jAvA";
 
-
+        int howMany = countTargetWord(words,"java");
+        System.out.println("Count of Java repeated "+howMany+" times.");
+    }
+    static int countTargetWord(String str, String word){
+        int counter = 0;
+        while(str.toLowerCase().contains("java")){
+            str = str.toLowerCase().replaceFirst("java","");
+            counter++;
+        }
+        return counter;
     }
 }
