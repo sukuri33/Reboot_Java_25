@@ -1,7 +1,8 @@
-package Day6_ArrayAndWrapperClasses;
+package Day8_ArrayList_CollectionsUtilClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 /*
  * Data Structures:
@@ -139,11 +140,11 @@ public class ArrayListIntro_And_Methods {
         System.out.println("---------------addAll more example--------------------------");
 
         ArrayList<String> students = new ArrayList<>();
-        students.addAll(  Arrays.asList("Gadir", "Hasan", "Abidullah", "Bilal" )   );
+        students.addAll(  Arrays.asList("Gadir", "Jacob", "Smith", "Bilal" )   );
 
         System.out.println(students);
 
-        students.addAll(2,  Arrays.asList("Shukur", "Sumeye", "Tatiana") );
+        students.addAll(2,  Arrays.asList("Shukur", "Sharman", "Tatiana") );
 
         System.out.println(students);
 
@@ -155,11 +156,11 @@ public class ArrayListIntro_And_Methods {
 
         boolean hasAlena = employeesList.contains("Alena");
         boolean hasAlenaGadir = employeesList.containsAll( Arrays.asList("Alena", "Gadir") );
-        boolean hasMuhtarAliKuzzat = employeesList.containsAll( Arrays.asList("Muhtar", "Ali", "Kuzzat") );
+        boolean hasMuhtarAliJason = employeesList.containsAll( Arrays.asList("Muhtar", "Ali", "Jason") );
 
         System.out.println("hasAlena = " + hasAlena);
         System.out.println("hasAlenaGadir = " + hasAlenaGadir);
-        System.out.println("hasMuhtarAliKuzzat = " + hasMuhtarAliKuzzat);
+        System.out.println("hasMuhtarAliJason = " + hasMuhtarAliJason);
 
         System.out.println("************** removeAll() ******************");
         ArrayList<Integer> list = new ArrayList<>();
@@ -171,9 +172,12 @@ public class ArrayListIntro_And_Methods {
         System.out.println("************** retainAll() ******************");
         ArrayList<String> developers = new ArrayList<>();
         developers.addAll( Arrays.asList(  "Alena", "Muhtar", "Gadir", "Ali", "Khashayar", "Madiyar", "Muhtar", "Muhtar" , "Alena")  );
-
+        System.out.println(developers);
         developers.retainAll(  Arrays.asList("Alena", "Khashayar", "Muhtar") );
 
         System.out.println(developers);
+
+        Iterator irt = developers.iterator();
+        irt.hasNext();
     }
 }

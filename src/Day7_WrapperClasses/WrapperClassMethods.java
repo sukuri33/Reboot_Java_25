@@ -1,4 +1,4 @@
-package Day6_ArrayAndWrapperClasses;
+package Day7_WrapperClasses;
 
 public class WrapperClassMethods {
     public static void main(String[] args) {

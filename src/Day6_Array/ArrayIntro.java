@@ -1,4 +1,4 @@
-package Day6_ArrayAndWrapperClasses;
+package Day6_Array;
 
 import Day5_ClassAndObject.Car;
 

@@ -1,6 +1,6 @@
-package Day6_ArrayAndWrapperClasses;
+package Day7_WrapperClasses;
 
-public class WrapperClassCharacter {
+public class Character_Class_Methods {
     public static void main(String[] args) {
 
         char ch = '*';
