@@ -1,0 +1,297 @@
+/*
+Create a class named Circle and declare the following variables:
+                radius
+                area
+                perimeter
+
+    Write a program that can calculate the area and perimeter of a circle with any given radius
+            Ex:
+                  radius = 5
+
+            output:
+                   Area of the circle is 78.5
+                   Perimeter of the circle is 31.4
+ */
+
+ /*
+ Create a class employeeNamed EmployeeInfo. declare the following variables:
+ 				1. employeeName (String)
+ 				2. age (int)
+ 				3. gender (char)
+ 				4. company (String)
+ 				5. jobTitle (String)
+ 				6. yearsOfExperience (double)
+ 				7. salary (int)
+ 				8. isFullTime (boolean)
+ 				9. isMarried (boolean)
+ 				10. employeeId (String)
+ 				11. SSN (String)
+  */
+
+/*
+   write a program that can calculate the area & perimeter of any given Rectangle
+  						length
+  						width
+  						area = length * width
+  						perimeter =  2 * (length + width)
+*/
+
+/*
+   Declare the following variables with appropriate data types:
+       students_name
+       age
+       gender
+       school_name
+       student_id
+       grade_level
+       gpa
+
+*/
+
+/*
+    Create a class called BirthDay and create the following variable
+                 name, birthDay(int), birthMonth(String), birthYear(int)
+
+                 use concatenation to display the birthday of the person
+
+                     if  name = "John"
+                         birthDay = 25
+                         birthMonth = "April"
+                         birthYear = 1995;
+
+                     output:
+                         John was born on April/25/1995.
+*/
+
+/*
+     Create a class named GallonsToLiters and declare the following variables:
+                     gallon
+                     liters
+
+         Write a program that can convert the any given number of gallons to liters
+             Ex:
+                   gallon = 10
+
+             output:
+                   10 gallons is equal to 37.9 litters
+
+                Hint:  1 gal = 3.79 L
+*/
+
+/*
+      Create a class named KilosToPounds and declare the following variables:
+                      kg
+                      lb
+
+           Write a program that can convert the any given number of kilos to pounds
+              Ex:
+                    kg = 10.5
+
+              output:
+                    10.5 kilos is equal to 23.1 pounds
+
+                 Hint:  1kg = 2.2 lb
+*/
+
+/*
+create a class named PhoneNumber and declare the following variables:
+            countryCode, areaCode, localNumber
+
+            use string concatenation to display the phone number
+
+            ex:
+                if  countryCode = 1
+                    areaCode = 703
+                    localNumber = 4512625
+
+                output:
+                    +1(703)-4512625
+ */
+/*
+Create a class named SalaryCalculator, and declare the following variables:
+                hourlyRate
+                weeklyHours
+                stateTaxRate
+                federalTaxRate
+
+     Use the given info above to calculate the followings:
+                salaryBeforeTax
+                stateTax
+                federalTax
+                totalTax
+                salaryAfterTax
+
+    7.2 Display each of the above in the following format:
+        Ex:
+              hourlyRate = $50
+              weeklyHours = 45
+              stateTax = 6  (given as percentage)
+              federalTax = 26 (given as percentage)
+
+        output:
+               Gross pay is: $117000
+                    Federal tax is: $30420
+                    State tax is: $7020
+                    Total tax is: $37440
+                     Net income is: $79560
+ */
+/*
+Create a class named Square and declare the following variables:
+                side
+                area
+                perimeter
+
+    Write a program that can calculate the area and perimeter of a square with any given  side
+        Ex:
+              side = 5
+
+        output:
+               Area of the square is 25
+               Perimeter of the square is 20
+ */
+/*
+Create a class named SwapTwoVariables1 and declare the following variables:
+            x
+            y
+            z
+
+    8.1 Write a program that swap variables x & y’ values by using a temporary variable z
+        Ex:
+              x = 10
+              y = 15
+
+        output:
+                  x = 15
+                  y = 20
+ */
+/*
+Create a class named SwapTwoVariable21 and declare the following variables:
+            a
+            b
+
+     Write a program that swap variables x & y’ values without using any temporary variables
+        Ex:
+              a = 10
+              b = 15
+
+        output:
+                  a = 15
+                  b = 20
+
+ */
+
+ /*
+ Create a class named AgeGroups, an integer variable named age is declared and given. write a program that can define the age groups of a person
+
+ 	             age groups are:
+ 	                    infant (1 - 2)
+ 	                    Toddler (3 - 5),
+ 	                    Kid (6 - 9),
+ 	                    Pre-Teen (10 - 12),
+ 	                    Teenager (13 - 17),
+ 	                    Young Adult (18 - 20),
+ 	                    Adult (21 - 39),
+ 	                    Young Middle-Aged Adult (40 - 49),
+ 	                    Middle-Aged Adult (50 - 54),
+ 	                    Very Young Senior Citizen (55 - 64),
+ 	                    Young Senior Citizen (65 - 74),
+ 	                    Senior Citizen (75 - 84),
+ 	                    Old Senior Citizen (85+)
+
+             Note: Do not use more than one print statement
+ */
+
+/*
+Create a class called Calculator, Given two double variables named n1 & n2, and a char variable named mathOperator, write a program that can calculate result of n1&n2 based on the given math Operator.
+
+		char operator -> -, +, *, /
+
+		when operator is + : add num1, num2
+		when operator: - : minus num1, num2
+		when operator: * : multiply num1, num2
+		when operator: / : divide num1, num2
+		for any other operators: print "invalid operator"
+
+		Ex:
+			n1 = 10, n2= 20, mathOperator = '+'
+
+		output:
+			30
+ */
+/*
+Create a class named CharacterIdentity, and write a program that can identify if the given character is a digit or Alphabetic Character(A~Z or a~Z) or a special character
+
+		Ex:
+			ch = '@'
+
+		output:
+			Special Character
+
+
+			ch = '1'
+
+		output:
+			digit
+
+		HINT: You may wanna check out the numbers of the chracters on ASCII table
+ */
+/*
+Create a class named ChooseLanguage, Given an integer variable named selection that has a number between 1~5, Write a program that can select the language based on the number that's given in selection and prints the following message:
+
+		for 1: Hello, thank for your call
+		for 2: Hola, gracias para llamar
+		for 3: Merhaba, aradiginiz icin tesekkurler
+		for 4: Privet, spasibo za vash zvonok
+		for 5: Merci ,pour votre appel
+
+	Note: Do not use more than one print statement
+ */
+/*
+Create a class named EqualNumbers, and write a program that can check the equality of the three given numberrs
+	 			declare 3 numbers n1, n2, n3
+	 			if all are equal ==> print "all equal"
+	  			if only n1 and n2 are equal  =>print  "n1&n2 are equal"
+	   			if only n2 and n3 are equal ==>print "n2&n3 are equal"
+	   			if only n3 and n1 are qual ==>print "n3&n1 are equal"
+				if none of them are euqal ==> none of them are equal
+ */
+/*
+Create a class named MedianNumber. write a program that can find the median number between three DIFFERENT given integers
+
+		Ex:
+                a = 10, b= 15, c = 20;
+
+            Output:
+                15 is the median number
+ */
+/*
+Create a class named NetIncomeCalc, Write a program that can calculate the salary after tax based on the following requirements
+                the tax rates are:
+                        35% for salary of 130K or more
+                        30% for salary of 100K to 129k
+                        25% for salary of 80K to 99K
+                        20% for salary of 79K or less
+
+                in addition, if the person is married, he/she will pay 5% less tax
+
+ */
+/*
+Create a  class named NumberToWord, and write a java program that can convert numbers between 0 ~ 9 to words
+			Ex:
+				number = 1;
+
+			output:
+				One
+
+		Note: Do not use more than one print statement
+ */
+/*
+Create a class named OxygenTank. You are diving in the ocean. Your oxygen tank has a certain level (number) and you must print a message based on the level:
+                Above 90 -  Your tank is full
+                Above 80 -  Still okay
+                Above 70 -  Don't go too far
+                Above 60 -  Start to head back
+                Above 50 -  Be careful now you at at 50%
+
+                USE ONE PRINT STATEMENT ONLY
+ */
